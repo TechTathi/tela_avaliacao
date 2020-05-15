@@ -1,0 +1,13 @@
+<div id='principal'>
+  <div class="flex-container">
+    <ng-container *ngFor="let star of stars">
+      <svg (mouseenter)='OnStarEnter()' (mouseLeave)='OnStarLeave()' (click)='OnStarClicked()' height="55px" width="53px" style='transform:rotate(-17deg)'
+        viewBox="0 0 25 23" data-rating="1">
+        <polygon stroke-width="0" points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" />
+      </svg>
+    </ng-container>
+  </div>
+</div>
+
+
+<!-- ng-container: Its a element that can act as the host to structural directives (binding elements and etc) -->

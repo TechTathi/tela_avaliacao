@@ -1,0 +1,15 @@
+<!-- A TAG principal da aplicação (frontend) -->
+
+<app-tela></app-tela>
+<app-star 
+      (starEnter)='onStarEnter($event)' (starLeave)='onStarLeave()'[starId]='star'
+      (starClicked)='onStarClicked($event)' [rating]='hoverStating || rating'>
+</app-star>
+
+
+<!--<div class='flex-container'>
+  <ng-container *ngfor ='let star of stars;'>
+    <app-star 
+      [starId]='star' [rating]='hoverStating || rating'></app-star>
+  </ng-container> 
+</div>  -->
